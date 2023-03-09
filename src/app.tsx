@@ -49,27 +49,43 @@ export function App() {
           <label htmlFor="date">Date</label>{" "}
           <input type="date" name="date" id="date" />
         </div>
-        <div>
-          <label htmlFor="weather">Weather</label>{" "}
-          <select name="weather" id="weather">
-            <option></option>
-            <option value="sunny">Sunny</option>
-            <option value="rainy">Rainy</option>
-            <option value="cloudy">Cloudy</option>
-            <option value="windy">Windy</option>
-            <option value="stormy">Stormy</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor="visibility">Visibility</label>{" "}
-          <select name="visibility" id="visibility">
-            <option></option>
-            <option value="great">Great</option>
-            <option value="good">Good</option>
-            <option value="ok">Ok</option>
-            <option value="poor">Poor</option>
-          </select>
-        </div>
+        <fieldset>
+          <legend>Weather</legend>{" "}
+          <div style={{ display: "flex", gap: 8 }}>
+            <label>
+              <input type="radio" name="weather" value="sunny" /> Sunny
+            </label>
+            <label>
+              <input type="radio" name="weather" value="rainy" /> Rainy
+            </label>
+            <label>
+              <input type="radio" name="weather" value="cloudy" /> Cloudy
+            </label>
+            <label>
+              <input type="radio" name="weather" value="windy" /> Windy
+            </label>
+            <label>
+              <input type="radio" name="weather" value="stormy" /> Stormy
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Visibility</legend>{" "}
+          <div style={{ display: "flex", gap: 8 }}>
+            <label>
+              <input type="radio" name="visibility" value="great" /> Great
+            </label>
+            <label>
+              <input type="radio" name="visibility" value="good" /> Good
+            </label>
+            <label>
+              <input type="radio" name="visibility" value="ok" /> Ok
+            </label>
+            <label>
+              <input type="radio" name="visibility" value="poor" /> Poor
+            </label>
+          </div>
+        </fieldset>
         <div>
           <label htmlFor="comment">Comment</label>{" "}
           <input type="text" name="comment" id="comment" />
