@@ -15,8 +15,12 @@ export function App() {
       {diaries.map((entry) => (
         <div key={entry.id}>
           <h3>{entry.date}</h3>
-          <div>visibility: {entry.visibility}</div>
-          <div>weather: {entry.weather}</div>
+          <div>
+            visibility: <strong>{entry.visibility}</strong>
+          </div>
+          <div>
+            weather: <strong>{entry.weather}</strong>
+          </div>
         </div>
       ))}
     </div>
